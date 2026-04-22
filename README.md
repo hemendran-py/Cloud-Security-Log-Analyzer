@@ -1,7 +1,7 @@
 # Security Log Analyzer
 
 [![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A Python-based cybersecurity tool for analyzing Linux authentication logs (`auth.log`) to detect potential security threats such as brute-force attacks and abnormal IP behavior using rule-based detection.
@@ -31,29 +31,12 @@ security-log-analyzer/
 └── README.md           # This file
 ```
 
-## 🛠️ Requirements
-
-- Python 3.6 or higher
-- No external dependencies (uses only standard library)
-
-## 📦 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/security-log-analyzer.git
-   cd security-log-analyzer
-   ```
-
-2. Ensure Python 3.6+ is installed:
-   ```bash
-   python --version
-   ```
-
 ## 🚀 Usage
 
 1. Place your `auth.log` file in the `logs/` directory, or modify the path in `analyzer.py`
 
 2. Run the analyzer:
+
    ```bash
    python analyzer.py
    ```
@@ -72,26 +55,33 @@ Analysis complete. 39 alerts generated and saved to alerts.txt
 ## 🔍 How It Works
 
 ### 1. Log Parsing (`utils.py`)
+
 The `parse_log_line()` function uses regex to extract:
+
 - Timestamp (converted to datetime)
 - IP address
 - Login status (success/fail)
 - Username
 
 ### 2. Detection Rules (`rules.py`)
+
 The `SecurityAnalyzer` class tracks:
+
 - Failed attempts per IP with timestamps
 - All requests per IP with timestamps
 
 **Brute-force Detection**:
+
 - Counts failed logins within 2-minute windows
 - Triggers alert when >5 failures detected
 
 **Abnormal Behavior Detection**:
+
 - Counts total requests within 5-minute windows
 - Triggers alert when >20 requests detected
 
 ### 3. Alert Generation (`analyzer.py`)
+
 - Processes each log entry
 - Applies detection rules
 - Generates formatted alerts
@@ -100,7 +90,9 @@ The `SecurityAnalyzer` class tracks:
 ## ⚙️ Customization
 
 ### Adjusting Detection Thresholds
+
 Modify values in `rules.py`:
+
 ```python
 # Change brute-force threshold
 if len(recent_fails) > 3:  # Instead of 5
@@ -110,13 +102,17 @@ if len(recent_requests) > 10:  # Instead of 20
 ```
 
 ### Supporting Different Log Formats
+
 Update regex pattern in `utils.py`:
+
 ```python
 pattern = r'your_custom_regex_here'
 ```
 
 ### Adding New Detection Rules
+
 Extend `SecurityAnalyzer` class in `rules.py`:
+
 ```python
 def check_new_rule(self, entry):
     # Your detection logic here
@@ -126,6 +122,7 @@ def check_new_rule(self, entry):
 ## 📝 Sample Log File
 
 The included `logs/auth.log` contains:
+
 - ✅ Normal successful logins
 - 🚨 Simulated brute-force attacks (multiple failures from same IP)
 - 🚨 Abnormal traffic patterns (high request volume)
@@ -149,25 +146,3 @@ Contributions welcome! Please:
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-### Ideas for Enhancement:
-- Support for additional log formats (syslog, Windows Event logs)
-- Machine learning-based anomaly detection
-- Real-time log monitoring
-- Integration with alerting systems (Slack, email)
-- Performance optimizations for large log files
-- Configuration file support
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by real-world cybersecurity log analysis practices
-- Built for educational and portfolio purposes
-- Thanks to the open-source community for Python and regex resources
-
----
-
-**Disclaimer**: This tool is for educational purposes only. Always follow ethical guidelines and legal requirements when analyzing security logs.
