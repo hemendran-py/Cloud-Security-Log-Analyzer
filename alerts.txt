@@ -1,0 +1,39 @@
+[ALERT] Possible brute-force attack from 192.168.1.100: 6 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.100: 6 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 6 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 7 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 8 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 9 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 10 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 11 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 12 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 21 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 22 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 23 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 24 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 25 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 26 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 27 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 28 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 29 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 30 requests in 5 minutes
+[ALERT] Possible brute-force attack from 192.168.1.200: 13 failed attempts in 2 minutes
+[ALERT] Abnormal IP behavior from 192.168.1.200: 31 requests in 5 minutes
