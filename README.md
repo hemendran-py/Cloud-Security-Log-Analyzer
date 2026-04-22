@@ -1,8 +1,6 @@
 # Security Log Analyzer
 
-[![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
 
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A Python-based cybersecurity tool for analyzing Linux authentication logs (`auth.log`) to detect potential security threats such as brute-force attacks and abnormal IP behavior using rule-based detection.
 
